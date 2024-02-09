@@ -1,0 +1,60 @@
+-- CREATE TABLE people (
+-- 	name VARCHAR(100),
+--     birthdate DATE,
+--     birthtime TIME,
+--     birthdt DATETIME
+-- );
+-- INSERT INTO people (name, birthdate, birthtime, birthdt)
+-- VALUES ('Elton', '2000-12-25', '11:00:00', '2000-12-25 11:00:00');
+-- INSERT INTO people (name, birthdate, birthtime, birthdt)
+-- VALUES ('Lulu', '1985-04-11', '9:45:10', '1985-04-11 9:45:10');
+-- INSERT INTO people (name, birthdate, birthtime, birthdt)
+-- VALUES ('Juan', '2020-08-15', '23:59:00', '2020-08-15 23:59:00');
+-- SELECT CURTIME();
+-- SELECT CURDATE();
+-- SELECT NOW();
+-- INSERT INTO people (name, birthdate, birthtime, birthdt)
+-- VALUES ('Hazel', CURDATE(), CURTIME(), NOW());
+-- select * from people;
+-- SELECT 
+--     birthtime,
+--     HOUR(birthtime),
+--     MINUTE(birthtime)
+-- FROM people;
+-- SELECT 
+--     birthdt,
+--     MONTH(birthdt),
+--     DAY(birthdt),
+--     HOUR(birthdt),
+--     MINUTE(birthdt)
+-- FROM people;
+-- SELECT birthdt, DATE_FORMAT(birthdt, 'BORN ON: %r %d %a %b %y') FROM people;
+-- SELECT CURTIME();
+--  
+-- SELECT CURDATE();
+--  
+-- SELECT DAYOFWEEK(CURDATE());
+-- SELECT DAYOFWEEK(NOW());
+-- SELECT DATE_FORMAT(NOW(), '%w') + 1;
+--  
+-- SELECT DAYNAME(NOW());
+-- SELECT DATE_FORMAT(NOW(), '%W');
+--  
+-- SELECT DATE_FORMAT(CURDATE(), '%m/%d/%Y');
+--  
+-- SELECT DATE_FORMAT(NOW(), '%M %D at %h:%i');
+--  
+-- CREATE TABLE tweets(
+--     content VARCHAR(140),
+--     username VARCHAR(20),
+--     created_at TIMESTAMP DEFAULT NOW()
+-- );
+--  
+-- INSERT INTO tweets (content, username) VALUES('this is my first tweet', 'coltscat');
+-- SELECT * FROM tweets;
+--  
+-- INSERT INTO tweets (content, username) VALUES('this is my second tweet', 'coltscat');
+-- SELECT * FROM tweets;
+-- SELECT * FROM people WHERE birthdate 
+-- BETWEEN CAST('1200-01-02' AS date) 
+-- AND CAST('2400-01-02' AS date);
